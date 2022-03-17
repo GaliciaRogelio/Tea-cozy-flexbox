@@ -16,14 +16,15 @@ header {
 }
 .title-img {
     height: 50px;
-    border-left: 10px;
+    margin-left: 10px;
+    width: auto;
 }
 .navbar {
     justify-content: space-around;
     display: inline-flex;
     width: 120%;
     list-style-type: none;
-
+    text-align: right;
 }
 
 /* Mission Section */
@@ -31,9 +32,9 @@ header {
 .mission-section {
     background-image:url("./src/images/img-mission-background.webp");
     height: 700px;
-    width: 1200px;
     display: flex;
     align-items: center;
+    margin: 0 40px;
 }
 .mission-container {
     text-align: center;
@@ -43,3 +44,47 @@ header {
 
 /* Featured Tea Section */ 
 
+.t-title {
+    text-align: center;
+    width: 1000px;
+}
+
+.featured-tea {
+    display: inline-flex;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+img {
+    height: 200px;
+    width: 300px;
+}
+
+/* Locations Section */
+
+.locations-section {
+    background-image: url(./src/images/img-locations-background.webp);
+    height: 500px;
+    align-items: center;
+}
+.locations-title {
+    text-align: center;
+    background-color: transparent;
+    height: 15px;
+}
+.container {
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+    display: inline-grid;
+}
+
+/* Footer Section */
+
+footer {
+    text-align: center;
+}
+.copyright {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
