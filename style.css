@@ -9,22 +9,26 @@
 /* Header components */
 
 header {
-    display:flex;
+    position: fixed;
+    top: 0;
+    display: flex;
     border-bottom: 1px solid seashell;
     height: 69px;
     width: 100%;
+    z-index: 5;
 }
 .title-img {
     height: 50px;
+    margin-top: 12px;
     margin-left: 10px;
     width: auto;
 }
-.navbar {
+ul {
     justify-content: space-around;
-    display: inline-flex;
-    width: 120%;
-    list-style-type: none;
+    display: flex;
     text-align: right;
+    width: 100%;
+    list-style-type: none;
 }
 
 /* Mission Section */
@@ -32,7 +36,9 @@ header {
 .mission-section {
     background-image:url("./src/images/img-mission-background.webp");
     height: 700px;
+    width: 1200px;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 40px;
 }
@@ -44,19 +50,31 @@ header {
 
 /* Featured Tea Section */ 
 
-.t-title {
-    text-align: center;
+#featured {
     width: 1000px;
+    margin: 0 140px;
 }
 
-.featured-tea {
-    display: inline-flex;
-    width: 1000px;
+.t-title {
+    justify-content: center;
+    text-align: center;
+}
+
+.tea-blocks, .location-cards { /* cards */
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
 img {
     height: 200px;
     width: 300px;
+    margin-bottom: -10px;
+}
+.img-container { /* col */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Locations Section */
@@ -64,7 +82,8 @@ img {
 .locations-section {
     background-image: url(./src/images/img-locations-background.webp);
     height: 500px;
-    align-items: center;
+    width: 1200px;
+    margin: 0 40px;
 }
 .locations-title {
     text-align: center;
@@ -80,8 +99,9 @@ img {
 
 /* Footer Section */
 
-footer {
+.contact-info {
     text-align: center;
+    margin: 0 140px;
 }
 .copyright {
     font-weight: bold;
